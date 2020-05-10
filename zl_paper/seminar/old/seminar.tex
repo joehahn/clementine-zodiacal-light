@@ -1,0 +1,400 @@
+%
+%	latex seminar.tex
+%
+%       to dvips in landscape mode for printing on paper:
+%       dvips -t landscape -o seminar.ps seminar -Pcmz -Pamz
+%
+%	to dvips for slides & pdf slideshow:
+%	dvips -o seminar.ps seminar -T 11.0in,7.33in -Pcmz -Pamz
+%
+\documentclass[20pt,35mmSlide,landscape]{foils}
+\usepackage{color,times,psfig}
+\setlength{\textwidth}{10in}
+\setlength{\oddsidemargin}{-0.5in}
+%\setlength{\evensidemargin}{-0.5in}
+
+\newcommand{\gtrsim}{\mbox{ \lower0.5ex\hbox{$\sim$} \kern-1.1em 
+                 \raise0.5ex\hbox{$>$}}}
+\newcommand{\lesssim}{\mbox{ \lower0.5ex\hbox{$\sim$} \kern-1.1em 
+                 \raise0.5ex\hbox{$<$}}}
+
+\definecolor{light-blue}{cmyk}{0.1, 0.0, 0.0, 0.0}
+\definecolor{light-yellow}{cmyk}{0.0, 0.0, 0.1, 0.0}
+\definecolor{light-red}{rgb}{1.0, 0.9, 0.9}
+\definecolor{light-green}{rgb}{0.9, 1.0, 0.9}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 1. Title page                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagecolor{light-green}
+
+\title{\vspace*{-5ex}Clementine Observations of the Zodiacal
+Light\\
+and the Dust Content of the Inner Solar System\vspace*{1.5ex}}
+
+\author{Joseph M.\ Hahn (LPI)\vspace*{4ex}\\
+with Herb Zook (NASA/JSC), Bonnie Cooper (OSS),
+and Sunny Sunkara (LPI)\vspace*{3ex}}
+
+\date{\today}
+\MyLogo{}
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 2. Herb								%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagecolor{light-yellow}
+
+\begin{figure}
+\vspace*{-0.75in}\centerline{\psfig{figure=figs/zook.ps,width=10.0in,height=6.0in}}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 3. ZL pic								%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagecolor{light-yellow}
+
+\parbox{10in}{
+\parbox{5in}{
+\begin{figure}[t]
+\vspace*{-6ex}\psfig{figure=figs/zl_pic.ps,height=5.0in,width=4.6in}
+\end{figure}
+{\hspace{10ex}\footnotesize photo by Marco Fulle.}
+}
+\parbox[c]{4.5in}{
+
+\vspace*{-4ex}The zodiacal light (ZL) is sunlight that is
+scattered and/or reradiated by interplanetary dust.\\
+
+The inner ZL is observed towards the sun,
+usually at optical wavelengths.\\
+
+The outer ZL is observed away from the sun,
+usually at infrared wavelengths.
+}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 3. Why?								%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagecolor{light-yellow}
+
+\begin{center}
+\vspace*{-1in}{\Large Why Study Interplanetary
+Dust?\vspace*{1ex}}
+\end{center}
+
+``Someone unfamiliar with astrophysical problems would certainly
+consider the study of interplanetary dust as an exercise of pure
+acedemic interest and may even smile at the fact that much
+theoretical machinery is devoted to tiny dust grains''
+
+{\small Philippe Lamy, 1975, Ph.D.\ thesis.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 4. Why again?								%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\pagecolor{light-yellow}
+\small
+
+\vspace*{-1.5in}\begin{itemize}
+
+\item Dust are samples of small bodies that formed in remote
+niches througout the solar system, and they place
+constraints on conditions in the solar nebula during the
+planet--forming epoch.\vspace*{1ex}
+
+\begin{itemize}
+
+\item dust from asteroids tell us of solar nebula conditions
+at $r\sim3$ AU\vspace*{1ex}
+
+\item dust from long--period Oort Cloud comets tell us of nebula
+conditions at $5\lesssim r\lesssim30$ AU\vspace*{1ex}
+
+\item dust from short--period Jupiter--Family comets tell us
+of conditions in the\\ Kuiper Belt at $r\gtrsim30$ AU\\
+
+\end{itemize}
+
+\item IF the information carried by dust samples
+(collected by U2 aircraft, Stardust, spacecraft impact
+experiments, {\it etc.}) are indeed decipherable, then their
+minerology will inform us of nebula conditions and its history
+over $3\lesssim r\lesssim30$ AU.\\
+
+\item However interpreting this dust requires understanding their
+{\sl sources} (asteroid \& comets), their {\sl spatial
+distributions}, transport mechanisms, and sampling biases
+(e.g., certain sources may be more effective at delivering dust
+to your detector than other sources).
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 5. History								%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagecolor{light-yellow}
+\normalsize
+
+\parbox{10in}{
+\parbox{6.5in}{
+\begin{figure}[l]
+\vspace*{-1in}\psfig{figure=figs/fraction.ps,height=6.0in,width=6.0in}
+\end{figure}
+}
+\parbox[c]{3.5in}{
+
+\begin{center}
+{\large The Abundance of Asteroidal \& Cometary Dust
+Grains:\vspace*{2ex}}
+\end{center}
+an oversimplified and incomplete history of interplanetary
+dust studies.\vspace*{1in}
+
+}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 6. Dust Bands								%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\pagecolor{light-yellow}
+\normalsize
+
+\vspace*{-1.5in}\begin{center}
+{\small Dust Bands in the Outer Zodiacal Light}
+\end{center}
+\begin{figure}[l]
+\vspace*{-0.18in}\psfig{figure=figs/IRAS_sykes.ps,height=4.4in,width=10.0in}
+\end{figure}
+\vspace*{-2.5ex}{\small
+Dust bands are due to collisions among Themis--family asteroids
+($i=1.4^\circ$), Koronis family ($i=2.1^\circ$), and
+Eos ($i=9.4^\circ$) (Dermott {\it et al.} 1984).\\
+Note also the dust trails from comets Encke \& Tempel 2
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 7. Dust Bands	2							%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\pagecolor{light-yellow}
+\small
+
+\vspace*{-12ex}\begin{center}
+{\small How Asteroid Families Produce Dust Band Pairs}
+\end{center}
+\vspace*{-2ex}\parbox{10in}{
+\parbox{8.5in}{
+\begin{figure}[t]
+\psfig{figure=figs/dust_bands.ps,height=2.5in,width=8.0in}
+\end{figure}
+}
+\hfil\parbox[c]{1.5in}{figure from Kortenkamp {\it et al.} (2001)
+}
+}
+\parbox{10in}{\small
+Asteroids in a family are fragments of a larger parent body
+having common $(a,e,i)$, which leads to frequent collisions
+among members.\vspace*{1ex}
+
+Collisions generate dust which spirals sunwards due to
+Poynting--Robertson drag, producing a sheet of dust having an
+angular thickness $\sim2i$.\vspace*{0.8ex}
+
+The grain's vertical motion is oscillatory, so they are densest
+at the higher latitudes where their  vertical velocity is
+lowest $\Rightarrow$ pair of dust bands at latitude
+\vspace*{1ex}$\pm i$.\vspace*{0.7ex}
+
+This dust sheet is also warped by the giant planets'
+secular gravitational perturbations.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 8. Clementine								%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\pagecolor{light-yellow}
+\normalsize
+
+\parbox{10in}{
+\parbox{5.5in}{
+\begin{figure}[t]
+\vspace*{-6ex}\psfig{figure=figs/Clementine.ps,height=5.0in,width=5.0in}
+\end{figure}
+}
+\hfil\parbox[c]{4.0in}{
+\begin{center}
+{\large Clementine Observations of the Inner Zodiacal
+Light\vspace*{0.6in}}
+\end{center}
+
+``We don't need a lot of fancy Ph.D's to build a
+spacecraft.''\vspace*{2ex}\\
+{\small Lt. Col. Pedro Rustan,\\
+Clementine program manager}\vspace*{1in}
+}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 9. Star Tracker							%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\pagecolor{light-yellow}
+\normalsize
+
+\parbox{10in}{
+\parbox{5.5in}{
+\begin{figure}[t]
+\vspace*{-9ex}\psfig{figure=figs/pretty_picture.ps,height=3.3in,width=5.0in}
+\end{figure}
+}
+\hfil\parbox[c]{4.0in}{
+\begin{center}
+{\large The Star Tracker Camera\vspace*{2in}}
+\end{center}
+}
+}
+
+\parbox{10in}{\small
+Hundreds of optical images of the inner ZL were acquired by 
+wide--angle star tracker cameras that are ordinarily used for
+spacecraft navigation.\vspace*{1ex}
+
+With the Moon occulting the Sun, the inner ZL was observed over
+elongations of \mbox{$2^\circ<\epsilon<30^\circ$}, or
+$10R_\odot<r<$ Venus.\vspace*{1ex}
+
+Lots of instrumental issues: no shutter!, dark--current
+subtraction, flatfielding, calibrating...
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 10. Mosaic							%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+\pagecolor{light-yellow}
+\normalsize
+
+\parbox{10in}{
+\hspace*{-4ex}\parbox{7.25in}{
+\begin{figure}[t]
+\vspace*{-11ex}\psfig{figure=figs/mosaic.ps,height=7.0in,width=7.0in}
+\end{figure}
+}
+\hfil\parbox[c]{2.75in}{\small
+Clementine observed\\
+7 distinct fields\\
+
+Observed several planets: V,S,M,M,S,Mer.\\
+
+integrated $m_V=-8.5$\\
+
+Note:\\
+\mbox{$m_V(\mbox{full Moon})=-12.7$},
+\mbox{$m_V(\mbox{Venus})\ge-4.6$}\vspace*{1in}
+}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 11. Light Scattering						%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\pagecolor{light-yellow}
+\small
+
+\vspace*{-1.5in}\parbox{10in}{
+\parbox[c]{5.5in}{
+\begin{center}
+{\normalsize
+\vspace*{5ex}A Simple Model for Interplanetary Dust\vspace*{5ex}}
+\end{center}
+assume the density of dust cross section varies as
+\begin{displaymath}
+\sigma(r,\beta)=\sigma_1\left(\frac{r}{r_1}\right)^{-\nu}h(\beta)
+\end{displaymath}
+then the ZL surface brightness is \mbox{(Aller {\it et al} 1967):}
+}
+\hfil\parbox{4.5in}{
+\begin{figure}[t]
+\psfig{figure=figs/geometry.ps,height=4.5in,width=4.5in}\vspace*{-1in}
+\end{figure}
+}
+}
+\vspace*{-2.3in}\parbox{10in}{
+\begin{displaymath}
+Z(\theta,\phi)=\frac{a\sigma_1 r_1}{\sin^{\nu+1}\epsilon}
+\left(\frac{\Omega_\odot}{\pi\mbox{ sr}}\right)B_\odot
+\int_\epsilon^\pi\psi(\varphi)h(\beta(\varphi))
+\sin^\nu(\varphi)d\varphi
+\end{displaymath}
+where $a$=dust albedo, $B_\odot$=mean solar brightness, and\\
+$\psi(\phi)$=Hong's (1985) empirical phase law for dust.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 12. Profiles							%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\pagecolor{light-yellow}
+\small
+
+\vspace*{-1.5in}\parbox{10in}{
+\parbox[c]{4.5in}{
+\begin{center}
+{\normalsize
+\vspace*{3ex}Dust Variations in the Ecliptic\vspace*{3ex}}
+\end{center}
+Note that $h(\beta)=1$ in the ecliptic, so
+\begin{displaymath}
+Z(\epsilon)\rightarrow1.8\times10^{-5}
+\frac{a\sigma_1 r_1}{\sin^{\nu+1}\epsilon}B_\odot
+\end{displaymath}
+$\Rightarrow a\sigma_1=7.8\times10^{-22}$ cm$^2$/cm$^3$\\
+$\Rightarrow \nu=1.45\pm0.05$.\\
+
+Adopting $\sigma_1=4.6\times10^{-21}$ cm$^2$/cm$^3$\\
+(Gr\"{u}n {\it et al.} 1985),\\
+$\Rightarrow a=0.17$ within a factor of 2?
+}
+\hfil\parbox{5.0in}{
+\begin{figure}[t]
+\psfig{figure=figs/profiles.ps,height=5.0in,width=5.0in}\vspace*{-0.25in}
+\end{figure}
+}
+}
+\parbox{10in}{Note also the North--South and East--West asymmetries.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 13. Asymmetries						%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\pagecolor{light-yellow}
+\small
+
+\vspace*{-1.5in}\parbox{10in}{
+\parbox[c]{4.75in}{
+\vspace*{-0.1in}\begin{figure}[t]
+\psfig{figure=figs/longitudes.ps,height=4.0in,width=4.0in}
+\end{figure}
+The N--S asymmetry is probably due to the $i=3^\circ$ tilt
+of the dust midplane detected by Helios (Leinert {\it et al} 1980)).
+}
+\hfil\parbox{4.75in}{
+\vspace*{-1in}\begin{figure}[t]
+\psfig{figure=figs/dust_orbits.ps,height=4.0in,width=4.0in}\vspace*{-0.0in}
+\end{figure}
+The E--W asymmetry is probably due to `pericenter glow' (Dermott {\it et al}).
+}
+}
+
+\parbox{10in}{Tilt and pericenter glow are due to the secular part
+of the giant planets' gravitational perturbations.}
+
+\end{document}

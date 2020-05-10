@@ -1,0 +1,1 @@
+../flatfield/star_click.pro

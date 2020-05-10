@@ -1,0 +1,31 @@
+Clementine Observations of the Zodiacal Light and the Dust Content
+of the Inner Solar System
+
+by Joe Hahn, LPI
+
+Using the Moon to occult the Sun, the Clementine spacecraft used
+its navigation cameras to map the inner zodiacal light at optical
+wavelengths over elongations of 3-30 degrees from the Sun. The
+zodiacal light is sunlight that is reflected by interplanetary
+dust, so these images provide information on the spatial
+distribution of this dust over heliocentric distances of
+about 10 solar radii to the orbit of Venus. A simple model is
+applied to the data where it is assumed that the zodiacal light is
+due to three dust populations having distinct inclination
+distributions. These populations are: low-inclination dust from
+asteroids and Jupiter-family comets, higher-inclination dust from
+Halley-type comets, and an isotropic cloud of dust from Oort Cloud
+comets and interstellar sources. This modeling then yields
+estimates of the relative contributions to the interplanetary dust
+cross-section from asteroids, comets, and interstellar dust
+sources, as measured in the ecliptic as well as at higher
+latitudes. These results for the inner solar system are
+extrapolated out to the asteroid belt and yield an upper limit on
+the mass of the light-reflecting asteroidal dust that is equivalent
+to a 10 km asteroid. A similar extrapolation of the isotropic dust
+cloud out to Oort Cloud distances yields a mass equivalent to a
+30 km comet (although this mass estimate is quite uncertain). Since
+the flow of interstellar gas and dust ultimately strips these
+wide-ranging Oort Cloud dust grains from the solar system, these
+finding suggests that the Sun and perhaps other stars may have vast
+but tenuous stellar dust tails.

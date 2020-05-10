@@ -1,0 +1,260 @@
+Dear Phil,
+
+I have received the reviews of my manuscript #I08179,
+"Clementine Observations of the Zodiacal Light and the Dust
+Content of the Inner Solar System" by Hahn, Zook, Cooper, and
+Sunkara, revised the manuscript accordingly, and uploaded it to
+the Icarus website. I found these reviews quite useful since both
+reviewers spotted several omissions in the original manuscript;
+their comments have resulted in a revised manuscript that is
+substantially improved. The new manuscript adopts nearly all of
+the reviewers recommendations wherever appropriate. I
+appreciate the time and effort the reviewers invested in this
+paper.
+
+The two principle changes made to the text are:
+(1) The paper now considers two very different empirical
+light-scattering phase laws, both of which are successful at
+reproducing other zodiacal light observations like that studied
+here. Nonetheless, the revised manuscript now shows that our
+results are largely insensitive to the particulars of the
+adopted phase law. (2) Additional comparisons are also made
+between our findings and that obtained by previous studies of
+IRAS and COBE observations of the zodiacal light. In all
+instances the agreement between our findings and that of others
+is good.
+
+The following lengthy list details the reviewers comments and
+criticisms of the manuscript, our response, and all changes made
+to the manuscript.
+
+
+REVIEW 1:
+
+In the second paragraph of the reviewer's `comments' section the
+reviewer requests that scale bars be added to Figs. 4-5. I have
+since added a colorbar to the bottom of Fig. 5 to indicate the
+map's surface brightness, and the Fig. 4 caption has additional
+text indicating the range of intensities displayed in that
+figure. The reviewer also requests adding a vertical surface
+brightness profile, but this is already present in Fig. 8
+(e.g, the curves labeled N and S are the North and South, aka,
+vertical surface brightness profiles of the zodiacal light).
+
+In the next paragraph the reviewer points out that our original
+text used rather vague terms when describing how we constructed
+the light scattering phase law [e.g, we used the `recipe' of Hong
+(1985)]; this vague language has since been struck from the text.
+As the caption to Fig. 7 now explains, we simply take the phase
+law given in Hong (1985), which is only appropriate for a nu=1
+dust radial power law, insert it into Hong's Eqs (10) and (14),
+and then obtain a revised phase law that is now appropriate for
+the nu=1.45 power law adopted by this work. We do not, as the
+reviewer implies, perform a direct inversion of the brightness
+integral---this is unnecessary as Hong already did this. 
+The revised text on page 15 and in caption 7 provides additional
+information on this phase law, and the reader is also referred to
+the Hong (1985) paper if additional details are desired.
+
+The reviewer also asks for the inclusion of other possible phase
+laws and a discussion of their errors. The revised text on page
+15 now includes a treatment of a second and very different phase
+law constructed by Lamy and Perrin (1986), also shown in Fig. 7.
+At the top of page 15 the revised text also notes that our
+results (namely, Eqns. 3 and 4 and the modeling described
+thereafter) are largely insensitive to the
+choice of phase law aside from a factor of 1.6.
+The text also assumes that the differences in these
+two phase laws are representative of the uncertainty in the
+`real' phase law, and this uncertain factor of 1.6 translates
+into some additional uncertainty in the coefficient of Eq. (4).
+As the top paragraph on page 16 explains, this added uncertainty
+merely propagates into the uncertainty reported for the dust
+albedo. The long and short of it is, using alternate phase laws
+has no immediate effect on the modeling of the interplanetary
+dust cloud beyond altering the inferred dust albedo (see
+page 15).
+
+In the next paragraph, the reviewer claims that we `skip the
+empirical step of determining the (dust spatial)
+distribution in real space and jump directly to the
+phase space of orbital elements'. But this criticism is either
+confused or in error, and after reading this
+paragraph many times I still don't know which... Our
+manuscript does not `skip a step' when relating the
+distribution of the dust orbital elements to the dust spatial
+distribution. As Section 4.2.1 clearly states, we begin with
+the orbit elements of known dust sources (eg., asteroids
+and comets) and compute the resulting dust spatial distribution
+(or more precisely, the dust latitude distribution) using Eq.(6).
+If we have indeed skipped a step anywhere, it might be by
+providing Eq. (6) without derivation.  However we opt
+not to include this derivation since it is
+readily obtained from several other literature sources
+[see references near Eq (6)], but also because this derivation,
+though conceptually straightforward, is a bit laborious.
+But to mitigate any confusion, the revised manuscript now
+includes a new Fig. 14 showing how the inferred dust density
+varies with the heliocentric cylindrical coordinates (x,z).
+
+The reviewer also requests additional comparisons between
+our results and that of Kelsall et al (1998) and Grun et al
+(1985). In fact, our new Fig. 14 is constructed such that our
+results can be directly compared to the Kelsall et al study of
+the COBE observations of the zodiacal light. Page 22 now
+describes that comparison in greater detail, where it is noted
+that our results for the dust spatial distribution are
+quite similar to that inferred by Kelsall et al, but that
+there are also some minor differences that are likely due to
+the rather different assumptions employed by both works. Page 22
+also notes that our inferred dust inclination distribution is
+rather similar to that obtained by Divine (1993), and page 16
+notes that our inferred dust power law nu is similar (but not
+identical) to that inferred by Leinert et al (1981) from Helios
+observations and by Kelsall et al from COBE. Page 24 also
+reports our upper limits on the cross-section and the mass of
+asteroidal dust, and pages 24-25 shows that these upper limits
+are also consistent with other measurements of the asteroidal
+dust bands obtained by Grogan et al (2001) and Reach et al
+(1997). In all instances where comparisons are possible, our
+findings are in good agreement with the preceding studies of
+Helios, IRAS, and COBE data.
+
+The reviewer also recommends comparing our results to Grun et al
+(1985), but that would be comparing apples and oranges. The
+Grun et al work derives the *size* distribution of interplanetary
+dust at one locale whereas our work seeks the *spatial*
+distribution of dust throughout the inner solar system.
+However we do apply the Grun et al results repeatedly in our
+analysis---see pages 14, 20, 23, 24 and 26.
+
+In the next paragraph the reviewer notes that real dust grains
+are driven across resonances with the planets by
+Poynting-Robertson drag, and that this can result in some
+additional dust-size-dependent inclination excitation that is
+not accounted for by our `static' dust model.
+However the reader was already alerted to this in the last
+paragraph of page 19, where we argue (but do not prove!)
+that the bulk of the light-reflecting dust are sufficiently
+small that this unmodeled phenomenon does not significantly alter
+our results. The reader is also reminded of this issue in the
+Conclusions (at the bottom of page 27) where we also recommend
+using a more sophisticated `dynamic' dust model to obtain more
+accurate results.
+
+In the same paragraph the reviewer suggests that sublimation or
+jetting by comets can insert dust into orbits that differ
+from the parent comet. However this is a non-issue since cometary
+dust ejection velocities are small compared to a comet's
+orbital velocity, so the ejected dust enters an orbit very
+similar to the parent comet.
+
+In the next paragraph the reviewer notes that cometary dust
+production varies with heliocentric distance. Note, however,
+that our model already handles this (albeit in a rather
+simplistic manner) by allowing the model's cometary dust
+population to have an arbitrary radial power-law in its spatial
+distribution---see the top of page 21. The reviewer also states
+that `transport mechanisms also act predominantly inward, so the
+connection between the observed region and the outer solar
+system is weak'. But if the reviewer has identified a `weakness'
+in our paper, I don't know what it is as I do not understand the
+reviewer's point... The reviewer also notes that distant (e.g.,
+low-eccentricity) comets do not get close enough to the Sun to
+produce dust. But this also is a non-issue since we ignore such
+comets. As stated at the bottom of page 18 and in the Fig. 10
+caption, our model only considers source comets in orbits having
+perihelia<2.5 AU which are presumably active dust-producing
+comets; the model completely ignores distant, inactive comets.
+
+The reviewer also claims that the extrapolation of our
+results out to the Oort Cloud is `ludicrous' and that
+'speculation about dust in the far outer solar system' should be
+deleted. However we regard our findings on Oort Cloud dust to be 
+speculative (rather than ludicrous!) but admittedly
+uncertain by orders of magnitude, as is advertised
+at the bottom of page 25. But this is also one of the more
+interesting results from our analysis---we have evidence of dust
+in orbits that may very well range out to Oort Cloud distances.
+This has a fascinating implication (see pages 25-26), namely,
+that the sun may reside at the center of a vast but tenuous
+dust cloud that is ~10^4 AU across, and this dust cloud is likely
+sculpted into dust tail of stellar dimensions by the local flow
+of interstellar gas and dust. This is cool stuff. However we do
+temper our enthusiasm somewhat by deleting almost three
+paragraphs that used to detail the ultimate fate of Oort Cloud
+dust.
+
+In the next paragraph the reviewer gives numerous reasons
+to label to our estimate of the mass of solar system dust as
+`unreliable'. Although we concur with all of the reviewer's
+statements, we feel that the `unreliable' label is unwarranted.
+The reviewer also recommends identifying our mass estimate
+with words like the `mass of the light-reflecting component',
+but this was already done on page 24 (between Eqs. 11-12) and in
+the conclusion near the bottom of page 28. All of the reviewer's
+caveats and concerns about this estimate were already spelled
+out in the original manuscript, so his objections on this point
+seem overstated. The derivation of this mass estimate is quite
+straightforward (page 24), and all of its inherent uncertainties
+are identified in the text, so I actually regard our result as
+quite reliable in the order-of-magnitude sense. The text on page
+24-25 also compares our results to some IRAS and COBE estimates,
+and all is in agreement. 
+
+The middle of page 18 now defines the `effective' dust albedo as
+the albedo that would be inferred if there were only a single
+dust population.
+
+The last paragraph of page 16 now states that the asymmetry
+seen in the north/south surface brightness profiles are are with
+respect to the ecliptic, and the east/west asymmetry is with
+respect to the Sun.
+
+The reviewer also notes that the word `latitude' has multiple
+interpretations. The revised text now uses more specific terms
+such as `heliocentric ecliptic latitude' or `geocentric ecliptic
+latitude' wherever the meaning might be unclear.
+
+Also, units are deliberately absent from Table II since all
+of its quantities are dimensionless.
+
+As noted above, an intensity scalebar has been added to Fig. 5
+and the dynamic range of Fig. 4 is now described in the caption.
+
+However we choose not to delete the former Fig. 12 (it is now
+Fig. 11 in the new manuscript) since these contours illustrate
+where on the sky the various dust sources are contributing to
+the zodiacal light (eg, asteroidal dust stays near the ecliptic
+while cometary dust is distributed to higher latitudes).
+
+But we do combine the former Figs. 10 & 11 into a single Fig. 10
+having a common x-axis.
+
+
+Review II:
+
+Thankfully this reviewer spotted our erroneous statement
+(eg, "there is no forward light scattering by dust..."). We
+originally made this claim due to our reliance upon the backward
+scattering phase law of Hong (1985). But, as the reviewer notes,
+there are also alternative light scattering functions.
+The most useful reference suggested by the reviewer is
+the Lamy and Perrin (1986) paper which derives a forward
+scattering phase law for interplanetary dust. As was noted
+above, the revised text at the top of page 15 now includes a
+discussion of the Lamy and Perrin phase law that is also shown
+in Fig. 7. The text also shows that our model of the
+interplanetary dust cloud is largely insensitive to the
+possible choice between a back scattering law like Hong's or a
+forward scattering law like Lamy and Perrin. Rather, the
+uncertainty associated with the particular phase law ultimately
+propagates into an additional +/-30% uncertainty in the dust
+albedo (see text below Eq. 5).
+
+
+I thank both reviewers for their valuable input.
+
+Regards,
+Joe Hahn
+LPI

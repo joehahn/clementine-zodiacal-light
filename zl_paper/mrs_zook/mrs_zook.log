@@ -1,0 +1,49 @@
+This is TeX, Version 3.14159 (Web2C 7.3.1) (format=latex 1999.8.17)  20 OCT 2002 11:11
+**mrs_zook
+(mrs_zook.tex
+LaTeX2e <1998/12/01> patch level 1
+Babel <v3.6x> and hyphenation patterns for american, french, german, ngerman, n
+ohyphenation, loaded.
+(/usr/local/lib/texmf/tex/latex/base/letter.cls
+Document Class: letter 1999/02/09 v1.2z Standard LaTeX document class
+(/usr/local/lib/texmf/tex/latex/base/size12.clo
+File: size12.clo 1999/01/07 v1.4a Standard LaTeX file (size option)
+)
+\longindentation=\dimen102
+\indentedwidth=\dimen103
+\labelcount=\count79
+) (mrs_zook.aux)
+\openout1 = `mrs_zook.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 25.
+ [1
+
+]
+(mrs_zook.aux) ) 
+Here is how much of TeX's memory you used:
+ 150 strings out of 10901
+ 1348 string characters out of 72441
+ 45060 words of memory out of 263001
+ 3146 multiletter control sequences out of 10000+0
+ 6723 words of font info for 24 fonts, out of 400000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 22i,6n,19p,126b,192s stack positions out of 300i,100n,500p,50000b,4000s
+
+Output written on mrs_zook.dvi (1 page, 2340 bytes).

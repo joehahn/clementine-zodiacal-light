@@ -1,0 +1,7 @@
+#!/bin/sh
+while read addr
+do
+  echo "Sending to $addr"
+  mailx -s "preprint on zodiacal light" $addr < message.txt
+  sleep 5
+done <addresses.txt

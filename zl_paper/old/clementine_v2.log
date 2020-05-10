@@ -1,0 +1,37 @@
+This is TeX, Version 3.14159 (Web2C 7.3.1) (format=latex 1999.8.17)  6 APR 2002 15:55
+**clementine_v2.tex
+(clementine_v2.tex
+LaTeX2e <1998/12/01> patch level 1
+Babel <v3.6x> and hyphenation patterns for american, french, german, ngerman, n
+ohyphenation, loaded.
+(aastex.cls
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 a
+     st+comet_i_dist.ps^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^...
+
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.1 a
+     st+comet_i_dist.ps^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ 
+Here is how much of TeX's memory you used:
+ 10 strings out of 10901
+ 243 string characters out of 72441
+ 43956 words of memory out of 263001
+ 3019 multiletter control sequences out of 10000+0
+ 3640 words of font info for 14 fonts, out of 400000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 12i,0n,7p,1092b,14s stack positions out of 300i,100n,500p,50000b,4000s
+No pages of output.

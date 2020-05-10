@@ -1,0 +1,20 @@
+The upper greyscale image shows the zodiacal light as observed by
+the Clementine spacecraft while in orbit about the Moon in 1994.
+The zodiacal light, which is the diffuse band of light seen
+behind and beyond the lunar limb, is sunlight that is reflected by
+the interplanetary dust that envelopes the solar system. The Sun is
+just behind the lunar south pole, and Venus is the bright object
+to the left. Ecliptic north and east are above and to the left
+of the Sun in both images, which show logarithmic variations in
+the brightness of the zodiacal light.
+
+The 60x60 degree color mosaic shows a wide-angle view of the
+dust that bathes the inner solar system. The datagap in the
+center of this image indicates where the Moon blocked
+out an otherwise blinding Sun, also shown to scale here as a
+yellow dot. The faint linear features in this image are artifacts
+in the data and are not real. These data were acquired over a
+five--week interval, so several planets are visible at multiple
+locations due to the spacecraft's as well as the planets' motions
+about the Sun. From center-right to left these planets are are:
+Mercury, Saturn, Mars, Mars, and Saturn.

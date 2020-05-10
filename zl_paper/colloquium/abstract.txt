@@ -1,0 +1,21 @@
+Clementine Observations of the Zodiacal Light,
+and the Dust Content of the Inner Solar System
+
+Using the Moon to occult the Sun, the Clementine spacecraft used its navigation
+cameras to map the zodiacal light, which is the sunlight that is reflected
+by interplanetary dust. This surface brightness map is then used to infer the
+spatial distribution of interplanetary dust over heliocentric distances from 10
+solar radii out to the orbit of Venus. A simple model that attributes the zodiacal
+light to three dust populations having distinct orbital distributions is then
+applied to the observations. This model assumes that the interplanetary dust originates
+from (i.) asteroids and Jupiter-family comets (JFCs) in low inclination orbits,
+(ii.) Halley-type comets having intermediate inclinations, and (iii) high-inclination 
+Oort Cloud comets. The best-fitting scenario indicates that asteroids + JFCs 
+are the source of about half of the optical dust cross section seen in the ecliptic at
+1 AU, but that at least 90% of the dust cross section enclosed by a 1-AU-radius sphere
+is of cometary origin. When these results are then extrapolated out to the asteroid 
+belt, I obtain an upper limit on the mass of light-reflecting asteroidal dust that
+is equivalent to a 12-km asteroid. A similar extrapolation of the high-inclination dust
+out to Oort Cloud distances also yields a mass equivalent to a 30-km comet,
+although that mass is uncertain by orders of magnitude. Other findings will also be
+reported, as well as a brief overview of the interplanetary dust field.

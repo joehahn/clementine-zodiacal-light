@@ -1,0 +1,379 @@
+;mosaic.pro
+
+;Set pflag=1 to output postscript files
+pflag=0
+
+;calibration constant coverts 1 ADU/sec to mean solar brightness
+cal=1.07e-13
+
+;Filenames for each orbit
+files=['orbit66.dat',  'orbit110.dat', 'orbit110_sunny.dat' , $
+       'orbit164.dat', 'orbit193.dat', 'orbit206.dat', $
+       'orbit247.dat' ]
+
+;dark-current corrections for flatfield
+dc_correction=[ 0.0, 7.75, 15.5, 3.2, 0.0, -2.8, 14.5 ]
+
+
+;Orbit 247 gives ugly results...don't use it.
+files=['orbit66.dat',  'orbit110.dat', 'orbit110_sunny.dat',  $
+       'orbit164.dat', 'orbit193.dat', 'orbit206.dat' ]
+dc_correction=[ 0.0, 7.75, 15.5, 3.2, 0.0, -2.8 ]
+
+;Read data
+Nimages=n_elements(files)
+for i=0,Nimages-1 do begin $
+  print,'Reading ',files(i) & $
+  restore,files(i) & $
+  if (i eq 0) then begin $
+    sz=size(counts) & $
+    Nx=sz(1) & $
+    Ny=sz(2) & $
+    countss=fltarr(Nx,Ny,Nimages) & $
+    exp_time=fltarr(Nx,Ny,Nimages) & $
+    good_pixels=bytarr(Nx,Ny,Nimages) & $
+    phii=fltarr(Nx,Ny,Nimages) & $
+    thetaa=fltarr(Nx,Ny,Nimages) & $
+    plate_scales=fltarr(Nimages) & $
+    twist_angles=fltarr(Nimages) & $
+  endif & $
+  countss(0,0,i)=counts & $
+  exp_time(0,0,i)=total_exp_time & $
+  good_pixels(0,0,i)=good_pix & $
+  phii(0,0,i)=phi & $
+  thetaa(0,0,i)=theta & $
+  plate_scales(i)=plate_scl & $
+  twist_angles(i)=twist_angle & $
+endfor
+phi=phii
+theta=thetaa
+counts=countss
+
+;smooth orbit 110, if needed
+;im=1
+;gd=good_pixels(*,*,im)
+;gd(182:*,*)=0
+;good_pixels(0,0,im)=gd
+;cnts=counts(*,*,im)*gd
+;cnts=cnts(5:181,9:566)
+;cnts=smooth(cnts,5)
+;counts(5,9,im)=cnts
+
+;check images
+flux=fltarr(Nx,Ny,Nimages)
+px=where(good_pixels gt 0)
+flux(px)=counts(px)/exp_time(px)
+
+;resample image into ecliptic coordinate system,
+;and smooth over a 2x2 box
+q=atan(tan(theta)/cos(phi))
+eta=tan(theta)/cos(phi)
+chi=cos(q)*tan(phi)/cos(q)
+ps_avg=avg(plate_scales)
+x=-chi/ps_avg
+xc=-min(x)
+x=x+xc
+Nxs=round(max(x))+2
+y=eta/ps_avg
+yc=-min(y)
+y=y+yc
+Nys=round(max(y))+2
+total_counts=fltarr(Nxs,Nys)
+total_exp_time=fltarr(Nxs,Nys)
+good=intarr(Nxs,Nys)
+for xi=0,Nx-1 do begin $
+  for yi=0,Ny-1 do begin $
+    for ti=0,Nimages-1 do begin $
+      if (good_pixels(xi,yi,ti) eq 1) then begin $
+        xx=x(xi,yi,ti) & $
+        yy=y(xi,yi,ti) & $
+        total_counts(xx,yy)=total_counts(xx:xx+1,yy:yy+1)+ $
+          counts(xi,yi,ti)+dc_correction(ti)* $
+          exp_time(xi,yi,ti) & $
+        total_exp_time(xx,yy)=total_exp_time(xx:xx+1,yy:yy+1)+ $
+          exp_time(xi,yi,ti) & $
+        good(xx,yy)=good(xx:xx+1,yy:yy+1)+1 & $
+      endif & $
+    endfor & $
+  endfor & $
+endfor
+j=where(good gt 0)
+mosaic=fltarr(Nxs,Nys)
+mosaic(j)=total_counts(j)/total_exp_time(j)
+
+;cosmetic fix along Venus' row
+save,filename='/tmp/mosaic.dat',mosaic
+;for x=29,300 do begin $
+;  y=where(good(x,365:375) eq 0) & $
+;  y0=365+y(0) & $
+;  y1=365+y(n_elements(y)-1) & $
+;  if (y0 gt 364) then begin $
+;    image(x,y0-1)=0.5*(image(x,y0-4:y0-2)+image(x,y0+2:y0+4)) & $
+;    good(x,y0:y1)=1 & $
+;  endif & $
+;endfor
+
+;trim image
+mosaic=mosaic(0:850,0:850)
+good=good(0:850,0:850)
+sz=size(mosaic)
+Nxs=sz(1)
+Nys=sz(2)
+
+if (pflag ne 1) then window,xs=Nxs,ys=Nys
+print,'average plate-scale = ',ps_avg,' radians/pixel'
+print,'average plate-scale = ',ps_avg*180./!pi,' degrees/pixel'
+Rsun=4.64e-3			;angular radius of Sun, radians
+radial,rad,xc,yc,Nxs,Nys
+rad=rad*ps_avg
+sun=where(rad le Rsun)
+
+;tv greyscale
+if (pflag eq 1) then setplot
+log_mosaic=alog(mosaic>1)
+log_mosaic=255.0*log_mosaic/max(log_mosaic)
+log_mosaic(sun)=255.0
+tv,log_mosaic
+;one_arrow, 650.0, 650.0, 90.0, 'N'
+;one_arrow, 650.0, 650.0,180.0, 'E'
+;xyouts, -24.9, -0.25, '!9f!3',charsize=2
+;xyouts,  23.2, -0.29, '!20T!3',charsize=2
+;xyouts,  32.3, -0.28, '!9m!3',charsize=2
+if (pflag eq 1) then output_plot,'grey_mosaic.ps'
+
+;contour map
+twopi=2.0*!pi
+r2d=360.0/twopi
+x=r2d*atan(ps_avg*(indgen(Nxs)-xc))
+y=r2d*atan(ps_avg*(indgen(Nys)-yc))
+if (pflag eq 1) then setplot
+xrng=32.0*[-1,1] & yrng=32.0*[-1,1]
+log_mosaic(sun)=0.0
+contour,log_mosaic,x,y,nlevels=13,xstyle=1, $
+  ystyle=1,charsize=1.3,xrange=xrng,yrange=yrng, $
+  xtitle='ecliptic longitude    (degrees)', $
+  ytitle='ecliptic latitude    (degrees)'
+plots,[0,0],yrng,color=128
+plots,xrng,[0,0],color=128
+angle=twopi*findgen(101)/100.0
+x_sun=Rsun*r2d*cos(angle)
+y_sun=Rsun*r2d*sin(angle)
+polyfill,x_sun,y_sun
+one_arrow, 650.0, 650.0, 90.0, 'N'
+one_arrow, 650.0, 650.0,180.0, 'E'
+if (pflag eq 1) then output_plot,'contour.ps'
+
+;tv colormap
+if (pflag eq 1) then set_colorplot
+loadct,40
+log_mosaic(sun)=192.0
+tv,log_mosaic
+;one_arrow, 650.0, 650.0, 90.0, 'N'
+;one_arrow, 650.0, 650.0,180.0, 'E'
+;xyouts, -25.9, -0.25, '!9f!3 ',charsize=2
+;xyouts,  22.2, -0.29, '!20T!3 ',charsize=2
+;xyouts,  31.3, -0.28, '!9m!3 ',charsize=2
+if (pflag eq 1) then output_plot,'color_mosaic.ps'
+loadct,0
+
+;ecliptic surface brightness profiles
+if (pflag eq 0) then begin $
+  window,xs=600,ys=600 & $
+  clr=255 & $
+endif
+if (pflag eq 1) then begin $
+  set_colorplot & $
+  clr=0 & $
+endif
+loadct,39
+prof=fltarr(Nxs)
+for p=0,Nxs-1 do begin $
+  im_sub=mosaic(p,yc-1:yc+1) & $
+  gd_sub=good(p,yc-1:yc+1) & $
+  j=where(gd_sub ne 0) & $
+  if (j(0) ne -1) then prof(p)=median(im_sub(j)) & $
+  if (j(0) eq -1) then prof(p)=-10.0 & $
+endfor
+prof_east=rotate(prof(0:xc),2)
+prof_west=prof(xc:*)
+;zap innermost value
+j=where(prof_east gt -10.0)
+prof_east(j(0))=prof_east(0)
+j=where(prof_west gt -10.0)
+prof_west(j(0))=prof_west(0)
+x=r2d*atan(ps_avg*findgen(n_elements(prof_west)))
+N=n_elements(x)
+plot_oo,x,prof_east*cal,xrange=[1,35], $
+  xstyle=1,yrange=[2.0e-13,5.0e-10],ystyle=1,color=clr,thick=5, $
+  xtitle='ecliptic latitude & longitude    (degrees)', $
+  charsize=1.3,ytitle= $
+  'surface brightness    (mean solar brightness B!l!9n!3!n)'
+xyouts,4.7,1300*cal,'East',charsize=1,color=clr
+oplot,x,prof_west*cal,color=53,thick=5
+xyouts,5.0,450*cal,'West',charsize=1,color=53
+xyouts,17.0,150.0*cal,'Venus',color=clr
+xyouts,24.0,7.0e-11,'Mercury',color=53
+p=where((x ge 4.5) and (x le 17.0))
+coeff=poly_fit(alog(x(p)),alog(prof_east(p)),1,yfit)
+;oplot,x(p),exp(yfit)*cal,psym=8,color=128
+print,'east profile power-law index = ',coeff(1)
+
+;latitude surface brightness profiles
+;if (pflag eq 1) then setplot
+prof=fltarr(Nys)
+for p=0,Nys-1 do begin $
+  im_sub=mosaic(xc-1:xc+1,p) & $
+  gd_sub=good(xc-1:xc+1,p) & $
+  j=where(gd_sub ne 0) & $
+  if (j(0) ne -1) then prof(p)=median(im_sub(j)) & $
+  if (j(0) eq -1) then prof(p)=-10.0 & $
+endfor
+prof_south=rotate(prof(0:yc),2)
+prof_north=prof(yc:*)
+;zap innermost value
+j=where(prof_east gt -10.0)
+prof_east(j(0))=prof_east(0)
+j=where(prof_west gt -10.0)
+prof_west(j(0))=prof_west(0)
+y=r2d*atan(ps_avg*findgen(n_elements(prof_north)))
+N=n_elements(x)
+oplot,y,prof_south*cal,thick=5,color=147
+xyouts,1.4,2470*cal,'South',charsize=1,color=147
+oplot,y,prof_north*cal,color=254,thick=5
+xyouts,1.4,1900*cal,'North',charsize=1,color=254
+p=where((x ge 3.0) and (x le 19.0))
+coeff=poly_fit(alog(y(p)),alog(prof_north(p)),1,yfit)
+;oplot,y(p),exp(yfit)*cal,psym=8,color=196
+print,'north profile power-law index = ',coeff(1)
+coeff=poly_fit(alog(y(p)),alog(prof_south(p)),1,yfit)
+;oplot,y(p),exp(yfit)*cal,psym=8,color=196
+print,'south profile power-law index = ',coeff(1)
+if (pflag eq 1) then output_plot,'profiles.ps'
+loadct,0
+
+;profile ratios
+p=where((prof_east gt 0.0) and (prof_north gt 0.0))
+plot,x(p),prof_east(p)/prof_north(p),yrange=[2,5.5], $
+  xtitle='angular distance    (degrees)',charsize=1.3, $
+  ytitle='East/North and West/South surface brightness ratios', $
+  xrange=[0,30],thick=3
+p=where((prof_west gt 0.0) and (prof_south gt 0.0))
+oplot,x(p),prof_west(p)/prof_south(p)
+
+;Distance of the ZL midplane from the ecliptic
+if (pflag eq 1) then setplot
+dx=1
+dy=25
+Ndy=2*dy+1
+x=ps_avg*r2d*(indgen(Nxs)-xc)
+y=fltarr(Nxs)
+for p=0,Nxs-1 do begin $
+  sub_image=mosaic((p-dx)>0:(p+dx)<(Nxs-1),yc-dy:yc+dy) & $
+  sub_good = good((p-dx)>0:(p+dx)<(Nxs-1),yc-dy:yc+dy) & $
+  sub_med=fltarr(Ndy) & $
+  for j=0,Ndy-1 do begin $
+    row_image=sub_image(*,j) & $
+    row_good=sub_good(*,j) & $
+    k=where(row_good gt 0) & $
+    if (k(0) ne -1) then sub_med(j)=median(row_image(k)) & $
+    if (k(0) eq -1) then sub_med(j)=-2*Ndy & $
+  endfor & $
+  l=where(sub_med eq max(sub_med))-dy & $
+  y(p)=l(0) & $
+endfor
+j=where(good(*,yc) eq 0)
+y(j)=-2*Ndy
+y=y*ps_avg
+plot,x,y*r2d,psym=1,yrange=2.5*[-1,1],xrange=[-35,35], $
+  ystyle=1,xstyle=1,xtitle='ecliptic longitude    (degrees)', $
+  ytitle='ecliptic latitude    (degrees)',charsize=1.3, $
+  symsize=0.7
+if (pflag eq 1) then output_plot,'midplane.ps'
+
+;save results
+save,filename='mosaic.dat',mosaic
+
+stop
+
+;Check dc_offsets
+
+;check orbits 66, 110, & 193
+files=['orbit66.dat', 'orbit110.dat', 'orbit193.dat' ]
+dc_correction=[ 0.0, 7.75, 0.0]
+a=mosaic(*,490:510)
+for i=0,Nxs-1 do a(i,0)=avg(a(i,*))
+a=a(*,0)
+plot,a,xrange=[520,720]
+a=mosaic(*,140:160)
+for i=0,Nxs-1 do a(i,0)=avg(a(i,*))
+a=a(*,0)
+plot,a,xrange=[500,700]
+
+;check orbits 66 & 193
+files=['orbit66.dat', 'orbit193.dat' ]
+dc_correction=[ 0.0, 0.0]
+a=mosaic(*,115:120)
+for i=0,Nxs-1 do a(i,0)=avg(a(i,*))
+a=a(*,0)
+plot,a,xrange=[0,600],yrange=[4,10]
+a=mosaic(440:460,*)
+for i=0,Nys-1 do a(0,i)=avg(a(*,i))
+a=a(0,*)
+plot,a,xrange=[0,200],yrange=[5,15]
+
+;check orbits 164 & 193
+files=['orbit164.dat', 'orbit193.dat' ]
+dc_correction=[ 3.2, 0.0]
+a=mosaic(150:160,*)
+for i=0,Nys-1 do a(0,i)=avg(a(*,i))
+a=a(0,*)
+plot,a,xrange=[350,450]
+a=mosaic(*,375:385)
+for i=0,Nxs-1 do a(i,0)=avg(a(i,*))
+a=a(*,0)
+plot,a,xrange=[0,250]
+a=mosaic(190:210,*)
+for i=0,Nys-1 do a(0,i)=avg(a(*,i))
+a=a(0,*)
+plot,a,xrange=[250,300]
+
+;check orbits 193 & 206
+files=['orbit193.dat', 'orbit206.dat' ]
+dc_correction=[ 0.0, -2.8]
+a=mosaic(*,80:110)
+for i=0,Nxs-1 do a(i,0)=avg(a(i,*))
+a=a(*,0)
+plot,a,yrange=[4,8],xrange=[0,200]
+plot,a,yrange=[6,10],xrange=[550,650]
+a=mosaic(200:300,*)
+for i=0,Nys-1 do a(0,i)=avg(a(*,i))
+a=a(0,*)
+plot,a,xrange=[0,100]
+
+;check orbits 193 & 247
+files=['orbit193.dat', 'orbit247.dat' ]
+dc_correction=[ 0.0, 14.5]
+a=mosaic(*,210:230)
+for i=0,Nxs-1 do a(i,0)=avg(a(i,*))
+a=a(*,0)
+plot,a,xrange=[0,150]
+a=mosaic(*,90:110)
+for i=0,Nxs-1 do a(i,0)=avg(a(i,*))
+a=a(*,0)
+plot,a,xrange=[0,150],yrange=[6,12]
+a=mosaic(130:150,*)
+for i=0,Nys-1 do a(0,i)=avg(a(*,i))
+a=a(0,*)
+plot,a,xrange=[340,420],psym=10,yrange=[15,35]
+
+;check orbits 110 & 110_sunny
+files=['orbit110.dat', 'orbit110_sunny.dat' ]
+dc_correction=[ 7.75, 15.5 ]
+a=mosaic(*,580:600)
+for i=0,Nxs-1 do a(i,0)=avg(a(i,*))
+a=a(*,0)
+plot,a,xrange=[200,600],yrange=[4,10]
+a=mosaic(400:420,*)
+for i=0,Nys-1 do a(0,i)=avg(a(*,i))
+a=a(0,*)
+plot,a,xrange=[500,700]

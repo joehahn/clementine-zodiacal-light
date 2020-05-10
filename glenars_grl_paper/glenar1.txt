@@ -1,0 +1,193 @@
+From dglenar@verizon.net Sun May  4 07:14:37 2008
+Received: from mx.spacescience.org (172.16.77.19) by mail.spacescience.org
+ (172.16.77.24) with Microsoft SMTP Server id 8.1.240.5; Sun, 4 May 2008
+ 06:14:42 -0600
+Received: from vms044pub.verizon.net ([206.46.252.44])	by mx.spacescience.org
+ (SonicWALL 6.1.1.9687)	with ESMTP; Sun, 04 May 2008 13:18:10 +0000
+Received: from Dave-PC.verizon.net ([66.24.18.10]) by vms044.mailsrvcs.net
+ (Sun Java System Messaging Server 6.2-6.01 (built Apr 3 2006)) with ESMTPA id
+ <0K0C00K2DFBYVOU4@vms044.mailsrvcs.net> for jhahn@SpaceScience.org; Sun, 04
+ May 2008 07:14:25 -0500 (CDT)
+From: Dave Glenar <dglenar@verizon.net>
+To: Joe Hahn <jhahn@SpaceScience.org>
+CC: "Timothy.J.Stubbs@nasa.gov" <Timothy.J.Stubbs@nasa.gov>
+Date: Sun, 4 May 2008 06:14:37 -0600
+Subject: GRL paper
+Thread-Topic: GRL paper
+Thread-Index: Acit4G9Jt9cbKLvpS7GoTn3ep81m0A==
+Message-ID: <0K0C00K2HFBZVOU4@vms044.mailsrvcs.net>
+References: <0K05009MY8VD74B1@vms048.mailsrvcs.net>
+ <FEAAAA13E4E86344A128CC741A707709071BF707CF@kasa.ssi.local>
+In-Reply-To: <FEAAAA13E4E86344A128CC741A707709071BF707CF@kasa.ssi.local>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AuthSource: kasa.ssi.local
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+x-mlf-threat: nothreat
+x-mlf-threat-detailed: nothreat;none;none;list_addrbk_sender
+x-mlf-uniqueid: i200805041318050039523
+Content-Type: multipart/mixed;
+  boundary="_004_0K0C00K2HFBZVOU4vms044mailsrvcsnet_"
+MIME-Version: 1.0
+Status: R
+X-Status: NT
+X-KMail-EncryptionState:  
+X-KMail-SignatureState:  
+X-KMail-MDN-Sent:  
+
+--_004_0K0C00K2HFBZVOU4vms044mailsrvcsnet_
+Content-Type: multipart/alternative;
+	boundary="_000_0K0C00K2HFBZVOU4vms044mailsrvcsnet_"
+
+--_000_0K0C00K2HFBZVOU4vms044mailsrvcsnet_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Joe-
+
+Not sure if Tim has responded to you (I haven't received a cc) --- I know h=
+e was in a review panel this last week.
+(Actually, I'm on a 1-day review panel myself in ~ a week, & have a lot of =
+proposals to review beforehand, so I won't be able to make any headway on t=
+his Note until mid-month)
+
+To bring you up to date, I'm attaching the outline that he put together (wh=
+ich I reformatted a bit) & added my comments/ suggestions - in blue.
+Below is a copy of his response.  This is the present status of our dialogu=
+e as far as I know. In a nutshell, what I will need to move ahead is to hav=
+e the S/C observing parameters specified for our retrieval example(s), as c=
+ommented below.
+
+- Dave
+
+---------------------------------------------------------------------------=
+----------------------------------
+Thanks for the feedback on the outline for the LHG Clementine GRL =85
+
+Section 2
+
+I assume the Clementine UV-VIS cam was not used due to concerns about point=
+ing near the Sun =85?
+
+Your suggested table might be quite long?  I think we should quote an estim=
+ate of how many candidate images we anticipate are available =96 question f=
+or Joe.  A table like this would certainly be good once we have analyzed so=
+me images =85
+
+I=92d like to see a figure of the viewing geometry, since it=92d help make =
+the results more accessible =85.
+
+Section 3
+
+I just meant that Joe was trying to avoid including any LHG in his CZL mode=
+l, but that some small amount might still have been included. On Monday, I =
+mentioned that LHG =93contamination=94 might have been responsible for some=
+ of the anomalous features in the Hahn et al. isophote figure (Fig. 12).  I=
+ recall that Joe pointed out that this figure has a log scale such that the=
+ anomalies are not as bad as they look. I guess the point is that the Hahn =
+et al. CZL model is very good, but not perfect =85 I certainly did not want=
+ to appear disparaging about the possibility of viewing LHG with the ST.
+
+Section 4
+
+I think the streamers are most likely crepuscular rays associated with surf=
+ace topography, especially since they only appeared just before (~5 s) orbi=
+tal sunrise. So I don=92t think we should try and model these here. I don=
+=92t we need to make this more complicated at this stage =96 we have loads =
+of new stuff as it is =85
+
+The rest of your comments and changes looked good. I=92m sure we can trim t=
+hings down once we start getting figures and text together.
+
+Cheers, Tim
+---------------------------------------------------------------------------=
+---------------------------------------
+
+
+At 11:15 PM 4/30/2008, you wrote:
+Hi Dave,
+
+I'm away at a conference right now. But I will get back to you with a more =
+thoughtful email when
+I return home this weekend.
+
+But I have not seen any outline of the Clementine LHG paper, so do send me =
+a copy.
+
+Also, has the fate of the LASER proposal been determined?
+
+Cheers,
+Joe
+
+________________________________________
+From: Dave Glenar [dglenar@verizon.net]
+Sent: Wednesday, April 30, 2008 10:11 AM
+To: Joe Hahn
+Cc: Timothy.J.Stubbs@nasa.gov
+Subject: GRL paper - some ideas
+
+Hi Joe-
+
+We haven't had much dialogue since the LASER proposal - guess that
+was in September.
+
+I wonder if Tim sent you the outline of a short paper on the topic of
+Clementine LHG observations.  (If you haven't received it, you should
+get it soon).  My understanding is that we'll be putting this
+together fairly quickly for submission to GRL -- probably within the
+next couple of months.  It will include a fair amount of stuff from
+the LASER proposal I believe.
+I wanted to run some ideas by you & get your comments; I've chatted
+with Tim a bit about most of the following ideas.
+
+I'm thinking that this paper would include a 1D figure of LHG + CZL,
+similar to that in the proposal, except that the simulations would
+use the actual Clementine observing geometry, as listed in Hahn et
+al., Table I.  It might also convey (additional traces) the relative
+contribution of Na line emission, since that will need to be
+separated from LHG.   We might also add a DN axis which shows the
+actual ST response. It looks like that part shouldn't be a problem
+since ST responsivity seems to be thoroughly addressed in the Hahn et
+al. paper.
+
+I would think that another important point to get across is that it's
+feasible [let's hope] to retrieve coarse dust particle size &
+altitude information from LHG present in the Clementine data - in the
+presence of CZL. We would utilize 2D spatial information to the
+greatest extent possible (since we don't have multi-spectral
+information), and uncertainties would be driven by star tracker
+sensitivity, dynamic range and absolute calibration.  I was thinking
+of an additional figure something  contour plot(s) of CZL isophotes
+-  lunar limb superimposed.  LHG would appear as perturbations on
+those contours (details TBD - grin).
+
+The coordinate system in my 2D LHG model (in it's present state) is
+basically flexible.  It requires:
+   1. spacecraft orbital altitude
+   2. camera pixel scale
+   3. selenographic central angle between spacecraft and terminator
+   4. the pixel specifying the direction to sun center  (changing
+this pixel just moves the map & limb positions around within the image fram=
+e )
+
+In order to superimpose CZL and keep track of the N-S and E-W
+components, I'd also need to know the angle between my local x-axis
+(this axis is tangent to the limb at the sunrise/set point) and
+ecliptic N pole (or equator) at the time & location of observation(s).
+
+So .. assuming that we want to use actual Clementine observing
+circumstances (e.g., from your Table I), would it be a reasonable
+request for you to back out
+
+  - spacecraft altitude
+  - central angle (#3 above) and
+  - lunar horizon- ENP relative angle.
+
+for one or more of the actual (Table I) observations?
+
+Thanks !
+(Any & all comments & suggestions would be appreciated)
+
+- Dave

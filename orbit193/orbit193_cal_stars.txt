@@ -1,0 +1,15 @@
+FRAME FK5 2000 2000
+                  CIRCLE 1 02 00 +1 05 00 RADIUS 30
+                  MV -5.0/5.0
+                  SP G0/G5
+                  SORT +RADIUS
+
+
+
+
+1 objects: 
+
+identifier                |otyp| FK5 (2000/2000)             |  B&V magnitudes  | sp. type   | nref
+
+
+* 104 Aqr                 | *i*| 23 41 45.81  -17 48 59.5    |  5.609      4.82 | G2Ib/II    |   34

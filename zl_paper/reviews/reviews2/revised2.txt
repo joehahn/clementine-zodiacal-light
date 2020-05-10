@@ -1,0 +1,97 @@
+Dear Phil,
+
+I have since revised and submitted manuscript I08179. The
+following lists changes made to the manuscript with some comments
+on the reviews.
+
+Reviewer 2 notes that the former manuscript ignored a particular
+feature of the Lamy and Perrin (1986) volume scattering function.
+Lamy and Perrin advocate a volume scattering function F that has
+a slow dependence on heliocentric distance r via F(r)~r^(-nu_c)
+where nu_c could be between 0.3-0.45. Although this feature is
+now noted in a new paragraph of page 17, we still do not formally
+apply this radial variation in the remainder the text. However we
+do this only because we wish to compare our findings to those of
+other studies that also neglect this possible variation of the
+scattering function F with r. But page 17 also provides guidance
+should the reader desire to include this radial variation in
+F(r). As the text states, its main effect is to cause the dust
+albedo a to acquire a heliocentric variation as a~r^(-nu_c). This
+also alters the values of the power-law indices nu_j and the
+integration constants in Eqs 10-13 in ways that depend upon the
+particular choice of nu_c, but corrections for this effect are
+really quite small.
+
+
+Reviewer 1's chief complaint is with my estimate of the mass of
+the Oort Cloud dust seen in the Clementine observations. The
+reviewer also recommends further deletions of this discussion
+from the paper. But I do not do this since I regard this
+admittedly speculative interpretation of the data as my MOST
+INTERESTING FINDING, and it shall remain in the paper. The former
+manuscript also quoted an uncertainty of a factor of 500 in this
+mass estimate, which the reviewer also disputes. While my
+estimate of the uncertainty is also uncertain, it is
+not in the millions as reviewer claims unless the reviewer truly
+believes that this dust population could only reside in
+orbits having aphelia confined to Q ~ a few AU, which the review
+seems to suggest. However the manuscript does not entertain
+this scenario since there are no known sources of spatially
+isotropic dust that are confined to the inner solar system.
+The *most plausible explanation* for the observed cloud of
+isotropic dust is the one offered on pages 26-27, namely, that
+these grains are liberated by sublimating
+Oort Cloud comets. Since this dust gets injected into an orbits
+similar to their parent comets, this means that this dust ranges
+out to distance of $a~10^4$ AU where, after a few orbits around
+the Sun, they are removed or destroyed by interstellar gas and
+dust. The reviewer also states that it is
+"probably impossible for many reasons including planetary
+perturbations and collisions with interstellar dust" for this
+cloud of Oort Cloud dust to extend out to Oort Cloud distances
+of $a~10^4$ AU. Not only is the reviewer's claim incorrect, it
+makes little sense. While I agree that interstellar gas
+and dust do strip Oort Cloud dust from the solar system, this
+only occurs after the dust orbit the Sun about 1-10 orbits (note
+that arguments supporting this claim are given in version 1 of
+this manuscript but were subsequently deleted at reviewer 1's
+request). However planetary perturbations cannot possibly alter
+a dust grain's orbit in this time interval. And since the dust
+orbital lifetimes are in excess of one orbit period, they
+consequently have the opportunity to travel out distances of
+$a~10^4$ AU. My choice for the outer boundary of $a~10^4$ when
+estimating the mass of the the Oort Cloud dust is thereby
+justified. The text on pages 26-27 have been modified slightly
+to make this point clearer. I have also modified pages 3, 27,
+and 30 to vaguely state that this mass estimate is uncertain by
+unspecified orders of magnitude. Hopefully this will be a happy
+compromise.
+
+The reviewer points out that Eqn 10 is only valid out to ~3.3 AU
+where dust production ceases in the asteroid belt, and this is
+now noted in the sentence following Eqn 10.
+
+The reviewer also inquires about the fan model approximation for
+Fig 14. A brief discussion of this approximation is now added to
+the end of the first paragraph of page 23, which states that
+this approximation is OK, but not particularly good. The
+parameter for this model is k~1.5.
+
+The reviewer also states "the authors claim that particles will
+maintain their original orbital inclination distribution and
+will not have it modified by the effect of planetary
+perturbations." But we do not make any such claim. It was
+already noted on page 20 that secular resonances do indeed pump
+up dust inclinations by amounts that are size-dependent. But
+the text then argues that the bulk of the light-reflecting dust
+that we are sensitive to will suffer only modest
+inclination-pumping in amounts that may be neglected. A
+more accurate characterization of this manuscript would instead
+state that our model ignores i-pumping by secular
+resonances (but we certainly do not claim that this does not
+happen!). The reviewer also notes that the planets' secular
+perturbations causes warps in the dust midplane. However this
+effect was already noted in the last paragraph of page 16.
+This phenomenon can also cause inclination variations of a few
+degrees (which the model also neglects), and an additional
+statement to this effect has been added to the bottom of page 20.

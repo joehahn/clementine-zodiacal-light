@@ -1,0 +1,59 @@
+
+Icarus Review Submission(11/23/01 at 11:32:25 CST)
+
+MANUSCRIPT: I08179
+AUTHORS: Hahn et al.
+SHORT TITLE: Clementine observations of the Zodiacal light
+
+
+ The reviewer wishes to remain anonymous.
+
+
+REVIEW SUMMARY
+
+ (a). Do you recommend that this manuscript be accepted for publication?
+      No, except possibly after substantial revisions and
+		 resubmission
+
+ (b). The overall length of the text in this manuscript is: 
+      NOT SELECTED
+
+ (c). The amount of display material (tables and figures) is: 
+      NOT SELECTED
+
+COMMENTS FOR THE AUTHORS
+
+   Referee report on "Clementine observations of the Zodiacal Light and
+  Dust Content of the Inner Solar System" by J.M. Hahn, H.A. Zook, B.
+  Cooper, and B Sunkara.
+  
+  The authors report on zodiacal light observations by the navigation
+  camera onboard the Clementine spacecraft. The measurements cover the
+  elongation range from 3 to 30 degrees while the moon occulted the sun.
+  There were several instrumental difficulties to overcome in analysing
+  the data: 1. The dynamic range in a single frame is only 256, but by
+  varying the exposure time by a factor 14 the overall range was extended
+  to 3600. 2. Because of the absence of a shutter the CCD was exposed
+  also during read-out. This required a complex "destreaking" method. 3.
+  A non-standard dark current subtraction needed to be applied to the
+  data. 
+  The data is then interpreted in terms of a radial and vertical dust
+  distribution. In particular the vertical distribution is then fitted by
+  3 orbital components of the interplanetary dust complex: dust from
+  asteroids and short-period comets, dust from Halley-type comets, and
+  dust from Oort-cloud comets.
+  
+  While the data analysis seems to be consistent, in light of the
+  instrumental difficulties the results should be taken with great
+  precautions. This is, because the result (p.15: "there is no
+  forward-scattering light by dust that lies near the observer")
+  contradicts most earlier work. Only after a careful comparison with
+  other relevant data sets and a discussion of the differences, the
+  results are believable. Relevant discussions are found in Leinert et
+  al., A&A, 47, 221, 1976; Lamy and Perrin, A&A 163, 269, 1986, Mann,
+  A&A, 261, 329, 1992 and other reports. Especially F-corana observations
+  from SOHO provide crucial information that is relevant for this
+  discussion.
+
+
+

@@ -1,0 +1,48 @@
+Dear Colleague,
+
+Our paper entitled "Clementine Observations of the Zodiacal Light
+and the Dust Content of the Inner Solar System", by J.M. Hahn,
+H.A. Zook, B. Cooper, and B. Sunkara, has been accepted for
+publication in Icarus. A preprint is available at the URL
+www.lpi.usra.edu/science/hahn/public/other_files/clementine/clementine_v3.pdf 
+and the abstract is given below. I hope you find it of interest.
+
+Regards,
+Joe Hahn
+LPI
+
+
+ABSTRACT
+
+Using the Moon to occult the Sun, the Clementine spacecraft used
+its navigation cameras to map the inner zodiacal light at optical
+wavelengths over elongations of 3<epsilon<30 degrees from the Sun.
+This surface brightness map is then used to infer the spatial
+distribution of interplanetary dust over heliocentric distances of
+about 10 solar radii to the orbit of Venus. The averaged ecliptic
+surface brightness of the zodiacal light falls off as
+Z~epsilon^{-2.45+-0.05} which suggests that the dust
+cross-sectional density nominally falls off as r^{-1.45+-0.05}.
+The interplanetary dust also has an albedo of a~0.1
+that is uncertain by a factor of ~2. Asymmetries of ~10% are seen
+in directions east-west and north-south of the Sun, and these
+may be due the giant planets' secular gravitational perturbations.
+
+We apply a simple model that attributes the zodiacal light as due 
+to three dust populations having distinct inclination
+distributions, namely, dust from asteroids and Jupiter-family
+comets (JFCs) having characteristic inclinations of i~7 degrees,
+dust from Halley-type comets having i~33 degrees, and an
+isotropic cloud of dust from Oort Cloud comets. The best-fitting
+scenario indicates that asteroids + JFCs are the source of about
+45% of the optical dust cross-section seen in the ecliptic at
+1 AU, but that at least 89% of the dust cross--section enclosed
+by a 1 AU radius sphere is of a cometary origin. Each population's
+radial density variations can also deviate somewhat from the
+nominal r^{-1.45}. When these results are extrapolated out to the
+asteroid belt, we find an upper limit on the mass of the
+light-reflecting asteroidal dust that is equivalent to a 12 km
+asteroid, and a similar extrapolation of the isotropic dust cloud
+out to Oort Cloud distances yields a mass equivalent to a 30 km
+comet, although the latter mass is uncertain by orders of
+magnitude.

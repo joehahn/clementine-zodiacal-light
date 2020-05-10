@@ -1,0 +1,76 @@
+
+From: brian@cfaps1.harvard.edu
+Date: Fri, 14 Sep 2001 14:15:04 -0400
+To: hahn@lpi.usra.edu
+X-VMS-To: smtp%"hahn@lpi.usra.edu"
+
+This is the first of 4 files for the Catalogue of Cometary Orbits 1999
+
+File 2 contains orbits of single-apparition comets
+     3 contains orbits of multiple-apparition comets
+     4 contains the original, osculating and future 1/a values
+
+
+
+
+In the basic files for the single-apparition and multiple-apparition comets
+the columns give the following:
+
+  1 to  15:  comet designation (in column 5, C indicates a long-period comet,
+                P a short-period comet, D a short-period comet that has
+                disappeared or is particularly uncertain)
+
+ 21 to  38:  perihelion time (generally TT since 1900, UT before 1900;
+                in column 38, T denotes TT before 1900, U denotes UT after
+                1900)
+ 
+ 40 to  47:  perihelion distance (AU)
+
+ 50 to  57:  eccentricity
+
+ 59 to  63:  revolution period (yr)
+
+ 66 to  73:  argument of perihelion (deg, J2000.0)
+
+ 76 to  83:  longitude of ascending node (deg, J2000.0)
+
+ 86 to  93:  inclination (deg, J2000.0)
+
+ 96 to 105:  epoch of osculation (almost invariably 0h UT or TT since
+                1925, often 12h UT or TT before 1925)
+
+107 to 112:  number of observations (in column 107, A = approximately, N =
+                normal places; in column 112, * means nongravitational forces
+                considered in solution)
+
+114 to 136   span covered by observations
+
+138          number of planets whose perturbations were considered
+
+139          # denotes presumed principal component of split comet
+
+143 to 170   comet name
+
+171 to 182   orbit computer
+
+183 to 186   year of publication of orbit
+
+
+In the file for the original and future orbits the columns give the following:
+
+  1 to  11   comet designation
+
+ 13 to  14   quality code (1A is best, 2B worst)
+
+ 18 to  22   perihelion distance (AU)
+
+ 25 to  29   inclination (deg, J2000.0)
+
+             reciprocal of the semimajor axis (AU**-1)"
+
+ 32 to  40   "orginal" referred to barycenter of solar system
+
+ 43 to  51   osculating for the epoch (near perihelion), referred to the
+                heliocenter
+
+ 54 to  62   "future" referred to barycenter of solar system

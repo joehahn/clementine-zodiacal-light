@@ -1,0 +1,20 @@
+FRAME FK5 2000 2000
+                  CIRCLE 22 42 00 -7 12 00 RADIUS 30
+                  MV -5.0/5.0
+                  SP G0/G5
+                  SORT +RADIUS
+
+
+
+
+6 objects: 
+
+identifier                |otyp| FK5 (2000/2000)             |  B&V magnitudes  | sp. type   | nref
+
+
+NAME SADALMELIK           | *i*| 22 05 47.04  -00 19 11.5    |  3.905      2.95 | G2Ib       |  177
+* bet Aqr                 | *i*| 21 31 33.53  -05 34 16.2    |  3.74       2.91 | G0Ib       |  173
+* 104 Aqr                 | *i*| 23 41 45.81  -17 48 59.5    |  5.609      4.82 | G2Ib/II    |   34
+* zet Cap                 | *i*| 21 26 40.03  -22 24 40.8    |  4.746      3.75 | G4Ibp...   |  115
+* 8 Equ                   | SB*| 21 15 49.43  +05 14 52.2    |  4.449      3.94 | G0III+...  |   55
+NSV 13864                 |  V*| 21 44 30.70  +17 21 00.1    |  5.491      4.34 | G5Ib       |   97

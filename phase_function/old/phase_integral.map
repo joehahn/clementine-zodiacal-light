@@ -1,0 +1,27 @@
+#phase_integral.map
+
+# to execute,           read `phase_integral.map`;
+
+Digits:=6;
+epsilon:='epsilon';
+alpha:='alpha';
+theta:='theta';
+
+#Zook's phase law
+K:=0.77;
+phase:=exp(-K*(Pi-theta));
+II:=Int(phase*sin(theta)^alpha,theta=epsilon..Pi);
+
+file:=`phase_integral.dat`;
+fopen(file,WRITE);
+for alpha from 1.4 to 1.8 by 0.2 do 
+  for epsilon from 0.0 to 2.2 by 0.05 do
+    eII:=evalf(II);
+    printf(`%f %f %f\n`,alpha,epsilon*57.3,eII);
+    fprintf(file,`%e %e %e\n`,alpha,epsilon,eII);
+  od;
+od;
+fclose(file);
+
+# to execute,           read `phase_integral.map`;
+
