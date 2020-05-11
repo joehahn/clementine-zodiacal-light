@@ -1,7 +1,5 @@
 # clementine-zodiacal-light
 
-archive of my analysis of the Clementine spacecraft's observations of the Zodiacal Light,
-
-detailed in Hahn et al 2002, Icarus, 158, 360 
-
+archive of my analysis of the Clementine spacecraft's observations of the Zodiacal Light,  
+detailed in Hahn et al 2002, Icarus, 158, 360  
 [link to paper](zl_paper/publisher/hahn02.pdf)
